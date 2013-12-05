@@ -47,7 +47,7 @@ $shop = $shops[$shop_id];
 <div class="talk">
 	<?php foreach ($messages as $message) {?>
 		<div class="talk-<?php if( !$message['is_shop'] ) { echo "you"; }else{ echo "me"; }; ?>">
-			<p class="date"><span class="glyphicon glyphicon-time"></span><?php echo date('m/d h:m', strtotime($message['create_dt'])); ?></p>
+			<p class="date"><span class="glyphicon glyphicon-time"></span><?php echo date('m/d H:i', strtotime($message['create_dt'])); ?></p>
 			<div class="message">
 				<p><?php echo htmlspecialchars($message['body']); ?></p>
 			</div>
