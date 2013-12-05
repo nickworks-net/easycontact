@@ -1,0 +1,23 @@
+CREATE DATABASE `easycontact`;
+USE `easycontact`;
+
+CREATE TABLE `message_thread` (
+	`id` int NOT NULL auto_increment,
+	`customer_id` varchar(255) NOT NULL,
+	`shop_id` int NOT NULL,	
+	`customer_name` varchar(255) NOT NULL,
+
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX (`customer_id`, `shop_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `message` (
+	`id` int NOT NULL auto_increment,
+	`thread_id` int NOT NULL,
+	`body` varchar(255) NOT NULL,
+	`is_shop` tinyint NOT NULL,
+	`create_dt` datetime NOT NULL,
+
+	PRIMARY KEY (`id`),
+	INDEX (`thread_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

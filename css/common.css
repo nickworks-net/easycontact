@@ -1,0 +1,57 @@
+
+body {
+	padding: 0 1em;
+}
+
+
+.talk {
+	padding: 0 0.5em;
+	position: relative;
+}
+.talk .message {
+	position: relative;
+	background-color: #ccc;
+	margin-bottom: 20px;
+	padding: 0.5em;
+	border-radius: 3px;
+}
+.talk .message:after {
+	content: '';
+	position: absolute;
+}
+.talk .talk-me .message {
+	background-color: #b0e767;
+}
+.talk .talk-me .message:after {
+	border-left: 10px solid #b0e767;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	right: -9px;
+	top: 7px;
+}
+.talk .talk-you .message {
+	background-color: #eee;
+}
+.talk .talk-you .message:after {
+	border-right: 10px solid #eee;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	left: -9px;
+	top: 7px;
+}
+.talk .talk-me {
+	margin-left: 1em;
+}
+.talk .talk-you {
+	margin-right: 1em;
+}
+.talk .message p {
+	margin: 0;
+}
+.talk .date {
+	font-size: 0.8em;
+	margin: 0;
+}
+.talk .talk-you .date {
+	text-align: right;
+}
