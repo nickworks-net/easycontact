@@ -24,7 +24,7 @@
 <h2>リンク</h2>
 <ul>
 	<li><a href="http://nick.hateblo.jp/entry/2013/12/05/175825" target="_blank">ブログ</a></li>
-	<li><a href="https://github.com/nickworks-net/easycontact">nickworks-net/easycontact · GitHub</a></li>
+	<li><a href="https://github.com/nickworks-net/easycontact" target="_blank">nickworks-net/easycontact · GitHub</a></li>
 </ul>
 
 
