@@ -8,7 +8,7 @@ require_once dirname(__FILE__) . "/Database.php";
 /* POSTパラメータ取得. */
 $customer_id = htmlspecialchars($_POST["cid"]);
 $shop_id = htmlspecialchars($_POST["sid"]);
-$customer_name = htmlspecialchars($_POST["name"]);
+$customer_name = htmlspecialchars( ( in_array("name", $_POST) ? $_POST["name"] : "" ) );
 $body = htmlspecialchars($_POST["body"]);
 $is_shop = (int) htmlspecialchars($_POST["is_shop"]);
 

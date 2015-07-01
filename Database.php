@@ -38,6 +38,7 @@ class Database {
     public function execute($sql, array $params = array()) {
         $stmt = $this->con->prepare($sql);
         foreach ($params as $key => $v) {
+            if ( !$v ) $v = array(0=>""); // なんかkey0がないよってwarning出てうざいので.
             list($value, $type) = (array)$v + array(1 => PDO::PARAM_STR);
             $stmt->bindValue(is_int($key) ? ++$key : $key, $value, $type);
         }
