@@ -12,9 +12,9 @@ easycontact
 （運用で使うならしっかり対策しましょう！）
 
 
-デモ
+ブログ記事
 ---------------
 
-http://nickworks.net/products/easycontact/
+http://nick.hateblo.jp/entry/2013/12/05/175825
 
 
