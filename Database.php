@@ -30,7 +30,7 @@ class Database {
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-                PDO::MYSQL_ATTR_READ_DEFAULT_FILE => '/etc/my.cnf', // これがないと文字化けする.
+                // PDO::MYSQL_ATTR_READ_DEFAULT_FILE => '/etc/my.cnf', // これがないと文字化けする.
             )
         );
     }
